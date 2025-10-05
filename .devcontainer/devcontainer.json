@@ -3,11 +3,10 @@
   "features": {
     "ghcr.io/devcontainers/features/python:1": {}
   },
-  "postCreateCommand": "uv pip install fastapi",
+  "postCreateCommand": "echo 'Fast setup!'",
   "customizations": {
     "vscode": {
       "extensions": [
-        "astral-sh.uv",
         "ms-python.python"
       ]
     }
