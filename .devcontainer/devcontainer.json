@@ -1,12 +1,15 @@
 {
   "name": "ga2-43819e",
   "features": {
-    "ghcr.io/devcontainers/features/python:1": {}
+    "ghcr.io/devcontainers/features/python:1": {
+      "installTools": true
+    }
   },
-  "postCreateCommand": "echo 'Fast setup!'",
+  "postCreateCommand": "curl -Ls https://astral.sh/uv/install.sh | bash && uv pip install fastapi",
   "customizations": {
     "vscode": {
       "extensions": [
+        "astral-sh.uv",
         "ms-python.python"
       ]
     }
